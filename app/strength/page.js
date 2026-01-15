@@ -13,19 +13,19 @@ export default function Strength() {
           <div className="bg-gray-800 p-6 rounded-lg">
             <h2 className="text-xl font-semibold mb-2">Beginner Strength</h2>
             <p className="text-gray-300 mb-3">Perfect for those starting their fitness journey. Learn proper form and build a solid foundation.</p>
-            <button className="bg-blue-600 px-4 py-2 rounded hover:bg-blue-700">Enroll Now</button>
+            <Link href="/register" className="bg-blue-600 px-4 py-2 rounded hover:bg-blue-700 inline-block">Enroll Now</Link>
           </div>
           
           <div className="bg-gray-800 p-6 rounded-lg">
             <h2 className="text-xl font-semibold mb-2">Intermediate Strength</h2>
             <p className="text-gray-300 mb-3">Level up your training with advanced techniques and heavier weights.</p>
-            <button className="bg-blue-600 px-4 py-2 rounded hover:bg-blue-700">Enroll Now</button>
+            <Link href="/register" className="bg-blue-600 px-4 py-2 rounded hover:bg-blue-700 inline-block">Enroll Now</Link>
           </div>
           
           <div className="bg-gray-800 p-6 rounded-lg">
             <h2 className="text-xl font-semibold mb-2">Advanced Powerlifting</h2>
             <p className="text-gray-300 mb-3">Master the big three lifts and push your limits with competitive training.</p>
-            <button className="bg-blue-600 px-4 py-2 rounded hover:bg-blue-700">Enroll Now</button>
+            <Link href="/register" className="bg-blue-600 px-4 py-2 rounded hover:bg-blue-700 inline-block">Enroll Now</Link>
           </div>
         </div>
 

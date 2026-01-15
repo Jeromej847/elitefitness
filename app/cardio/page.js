@@ -13,19 +13,19 @@ export default function Cardio() {
           <div className="bg-gray-800 p-6 rounded-lg">
             <h2 className="text-xl font-semibold mb-2">HIIT Training</h2>
             <p className="text-gray-300 mb-3">High-Intensity Interval Training for maximum calorie burn in minimal time.</p>
-            <button className="bg-blue-600 px-4 py-2 rounded hover:bg-blue-700">Enroll Now</button>
+            <Link href="/register" className="bg-blue-600 px-4 py-2 rounded hover:bg-blue-700 inline-block">Enroll Now</Link>
           </div>
           
           <div className="bg-gray-800 p-6 rounded-lg">
             <h2 className="text-xl font-semibold mb-2">Spin Class</h2>
             <p className="text-gray-300 mb-3">Indoor cycling with motivating instructors and great music to keep you energized.</p>
-            <button className="bg-blue-600 px-4 py-2 rounded hover:bg-blue-700">Enroll Now</button>
+            <Link href="/register" className="bg-blue-600 px-4 py-2 rounded hover:bg-blue-700 inline-block">Enroll Now</Link>
           </div>
           
           <div className="bg-gray-800 p-6 rounded-lg">
             <h2 className="text-xl font-semibold mb-2">Treadmill Running</h2>
             <p className="text-gray-300 mb-3">Improve your endurance with guided running programs and varying intensities.</p>
-            <button className="bg-blue-600 px-4 py-2 rounded hover:bg-blue-700">Enroll Now</button>
+            <Link href="/register" className="bg-blue-600 px-4 py-2 rounded hover:bg-blue-700 inline-block">Enroll Now</Link>
           </div>
         </div>
 

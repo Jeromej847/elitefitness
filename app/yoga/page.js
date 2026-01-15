@@ -13,19 +13,19 @@ export default function Yoga() {
           <div className="bg-gray-800 p-6 rounded-lg">
             <h2 className="text-xl font-semibold mb-2">Hatha Yoga</h2>
             <p className="text-gray-300 mb-3">Traditional yoga focusing on body alignment and breathing techniques.</p>
-            <button className="bg-blue-600 px-4 py-2 rounded hover:bg-blue-700">Enroll Now</button>
+            <Link href="/register" className="bg-blue-600 px-4 py-2 rounded hover:bg-blue-700 inline-block">Enroll Now</Link>
           </div>
           
           <div className="bg-gray-800 p-6 rounded-lg">
             <h2 className="text-xl font-semibold mb-2">Vinyasa Flow</h2>
             <p className="text-gray-300 mb-3">Dynamic yoga practice that links breath with movement for improved flexibility.</p>
-            <button className="bg-blue-600 px-4 py-2 rounded hover:bg-blue-700">Enroll Now</button>
+            <Link href="/register" className="bg-blue-600 px-4 py-2 rounded hover:bg-blue-700 inline-block">Enroll Now</Link>
           </div>
           
           <div className="bg-gray-800 p-6 rounded-lg">
             <h2 className="text-xl font-semibold mb-2">Restorative Yoga</h2>
             <p className="text-gray-300 mb-3">Gentle yoga for relaxation and recovery, perfect for stress relief.</p>
-            <button className="bg-blue-600 px-4 py-2 rounded hover:bg-blue-700">Enroll Now</button>
+            <Link href="/register" className="bg-blue-600 px-4 py-2 rounded hover:bg-blue-700 inline-block">Enroll Now</Link>
           </div>
         </div>
 
