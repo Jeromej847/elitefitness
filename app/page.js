@@ -1,11 +1,12 @@
 import Header from './components/Header'
 import Link from 'next/link'
 import Image from 'next/image'
+import './hero.css'
 
 export default function Home() {
   return (
-    <div className="bg-gray-900 text-white font-sans min-h-screen" style={{backgroundImage: "url('/img/background.jpg')", backgroundSize: 'cover', backgroundPosition: 'center'}}>
-      <div className="fixed inset-0 bg-black/50 -z-10"></div>
+    <div className="hero text-white font-sans min-h-screen bg-gray-900">
+      <div className="overlay"></div>
       
       <Header />
 
