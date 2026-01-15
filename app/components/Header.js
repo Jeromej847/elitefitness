@@ -30,6 +30,7 @@ export default function Header() {
         <Link href="/strength" className="hover:text-blue-400">Strength</Link>
         <Link href="/cardio" className="hover:text-blue-400">Cardio</Link>
         <Link href="/yoga" className="hover:text-blue-400">Yoga</Link>
+        <Link href="/register" className="hover:text-blue-400">Register</Link>
       </nav>
     </header>
   )
