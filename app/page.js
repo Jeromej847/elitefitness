@@ -1,6 +1,5 @@
 import Header from './components/Header'
 import Link from 'next/link'
-import Image from 'next/image'
 import './hero.css'
 
 export default function Home() {
@@ -10,20 +9,15 @@ export default function Home() {
       
       <Header />
 
-      <section className="max-w-5xl mx-auto mt-10 px-6">
-        <div className="relative w-full h-64 rounded-xl shadow-lg overflow-hidden">
-          <Image 
-            src="/img/Gym.jpg"
-            alt="Elite Fitness Gym"
-            width={800}
-            height={300}
-            className="w-full h-full object-cover"
-            priority
-          />
-        </div>
+      <section className="max-w-5xl mx-auto mt-10 px-6 relative z-10">
+        <img 
+          src="/img/Gym.jpg"
+          alt="Elite Fitness Gym"
+          className="w-full h-64 object-cover rounded-xl shadow-lg"
+        />
       </section>
 
-      <section className="max-w-5xl mx-auto p-6 grid grid-cols-1 md:grid-cols-3 gap-6 mt-10">
+      <section className="max-w-5xl mx-auto p-6 grid grid-cols-1 md:grid-cols-3 gap-6 mt-10 relative z-10">
         <article className="bg-gray-800 p-6 rounded-xl shadow-lg hover:scale-105 transition">
           <h2 className="text-2xl font-semibold mb-4">Strength Training</h2>
           <p className="mb-4">Build muscle, improve strength, and test your limits.</p>

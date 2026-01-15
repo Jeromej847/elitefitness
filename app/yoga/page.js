@@ -5,7 +5,7 @@ export default function Yoga() {
   return (
     <div className="bg-gray-900 text-white font-sans min-h-screen">
       <Header />
-      <main className="max-w-5xl mx-auto p-6">
+      <main className="max-w-5xl mx-auto p-6 relative z-10">
         <h1 className="text-3xl font-bold mt-4">Yoga Sessions</h1>
         <p className="mt-4 max-w-2xl">Improve flexibility, mental focus, and overall well-being through our rejuvenating yoga classes.</p>
         
