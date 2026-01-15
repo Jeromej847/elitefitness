@@ -12,7 +12,7 @@ export default function Home() {
       <section className="max-w-5xl mx-auto mt-10 px-6 relative z-10">
         <div className="w-full rounded-xl shadow-lg overflow-hidden">
           <img 
-            src="/img/Gym.jpg"
+            src="/api/image/Gym.jpg"
             alt="Elite Fitness Gym"
             className="w-full h-64 object-cover"
           />
