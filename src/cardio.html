@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Cardio Training</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+   <link rel="stylesheet" href="/public/style.css" />
+</head>
+ <body class="bg-gray-900 text-white font-sans bg-cover bg-center bg-no-repeat" style="background-image: url('/public/img/background.jpg');"></body>
+  <!-- NAV -->
+  <header class="p-6 bg-gray-800 shadow-lg flex justify-between items-center">
+    <h1 class="text-3xl font-bold">Elite Fitness Gym</h1>
+
+    <button id="hamburger" class="md:hidden flex flex-col space-y-1" aria-label="Toggle menu">
+      <span class="w-6 h-1 bg-white"></span>
+      <span class="w-6 h-1 bg-white"></span>
+      <span class="w-6 h-1 bg-white"></span>
+    </button>
+
+    <nav id="mobileMenu" class="hidden md:flex md:space-x-6 flex-col md:flex-row bg-gray-800 md:bg-transparent absolute md:static top-16 right-6 p-6 md:p-0 rounded-xl md:rounded-none shadow-lg md:shadow-none">
+      <a href="index.html" class="hover:text-blue-400">Home</a>
+      <a href="strength.html" class="hover:text-blue-400">Strength</a>
+      <a href="cardio.html" class="text-blue-400 font-semibold">Cardio</a>
+      <a href="yoga.html" class="hover:text-blue-400">Yoga</a>
+      <a href="register.html" class="hover:text-blue-400">Register</a>
+    </nav>
+  </header>
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobileMenu');
+    hamburger.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+  </script>
+
+  <!-- IMAGE CARD + CONTENT -->
+  <div class="max-w-4xl mx-auto mt-10">
+    <div class="bg-gray-800 p-4 rounded-xl shadow-lg">
+      <img src="/public/img/cards.jpeg" alt="Cardio training" class="w-full rounded-lg object-cover h-90 md:h-50" />
+      <div class="p-6">
+        <h2 class="text-3xl font-bold mb-4">Cardio Training Classes</h2>
+        <p class="mb-4 text-gray-200">
+          Improve cardiovascular health with our high-intensity and endurance-based cardio classes.
+        </p>
+
+        <ul class="space-y-4 mt-6 text-gray-200">
+          <li>
+            <h3 class="font-semibold">HIIT Sessions</h3>
+            <p class="text-sm text-gray-300">High-intensity intervals for maximum calorie burn.</p>
+          </li>
+          <li>
+            <h3 class="font-semibold">Cycling</h3>
+            <p class="text-sm text-gray-300">Indoor bike classes designed for speed and endurance.</p>
+          </li>
+          <li>
+            <h3 class="font-semibold">BoxFit Cardio</h3>
+            <p class="text-sm text-gray-300">Boxing-inspired training to get your heart pumping.</p>
+          </li>
+             <div class="mt-6 flex gap-4">
+        <a href="index.html" class="bg-blue-600 px-4 py-2 rounded hover:bg-blue-700">Back to Home</a>
+        <a href="register.html" class="bg-blue-600 px-4 py-2 rounded hover:bg-blue-700">Register</a>
+      </div>
+    </div>
+        </ul>
+      </div>
+    </div>
+  </div>
+ <footer class="bg-gray-800 text-white text-center p-6 mt-10">
+  <h2 class="text-xl font-semibold mb-2">Contact Us</h2>
+  <p>📞 Phone: +353 85 123 4567</p>
+  <p>📧 Email: elitefitness@example.com</p>
+  <p>📍 Location: Dundalk Louth, Ireland</p>
+  
+  <div class="flex justify-center gap-4 mt-4">
+    <a href="#" class="hover:text-blue-400">Instagram</a>
+    <a href="#" class="hover:text-blue-400">Facebook</a>
+    <a href="#" class="hover:text-blue-400">Twitter</a>
+  </div>
+
+  <p class="mt-4 text-sm text-gray-400">
+    &copy; 2025 Elite Fitness Gym. All rights reserved.
+  </p>
+</footer>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>

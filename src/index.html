@@ -1,0 +1,166 @@
+<!-- index.html -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/public/style.css" />
+  </head>
+  <body class="bg-gray-900 text-white font-sans bg-cover bg-center bg-no-repeat" style="background-image: url('/public/img/background.jpg');">
+    <div class="fixed inset-0 bg-black/50 -z-10"></div>
+    <div id="app">
+      <header class="p-6 bg-gray-800 shadow-lg flex justify-between items-center">
+  <h1 class="text-3xl font-bold">Elite Fitness Gym</h1>
+
+  <!-- Hamburger Button -->
+  <button id="hamburger" class="md:hidden flex flex-col space-y-1">
+    <span class="w-6 h-1 bg-white"></span>
+    <span class="w-6 h-1 bg-white"></span>
+    <span class="w-6 h-1 bg-white"></span>
+  </button>
+
+  <!-- Mobile Menu -->
+  <nav id="mobileMenu" class="hidden md:flex md:space-x-6 flex-col md:flex-row bg-gray-800 md:bg-transparent absolute md:static top-16 right-6 p-6 md:p-0 rounded-xl md:rounded-none shadow-lg md:shadow-none">
+    <a href="index.html" class="hover:text-blue-400">Home</a>
+    <a href="strength.html" class="hover:text-blue-400">Strength</a>
+    <a href="cardio.html" class="hover:text-blue-400">Cardio</a>
+    <a href="yoga.html" class="hover:text-blue-400">Yoga</a>
+  </nav>
+</header>
+<section class="max-w-5xl mx-auto mt-10">
+  <img src="/public/img/Gym.jpg" 
+       alt="Elite Fitness Gym" 
+       class="w-full h-64 object-cover rounded-xl shadow-lg"/>
+</section>
+
+
+<script>
+  const hamburger = document.getElementById('hamburger');
+  const mobileMenu = document.getElementById('mobileMenu');
+  hamburger.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+  });
+</script>
+
+      <section class="max-w-5xl mx-auto p-6 grid grid-cols-1 md:grid-cols-3 gap-6 mt-10">
+        <article class="bg-gray-800 p-6 rounded-xl shadow-lg hover:scale-105 transition">
+          <h2 class="text-2xl font-semibold mb-4">Strength Training</h2>
+          <p class="mb-4">Build muscle, improve strength, and test your limits.</p>
+          <a href="strength.html" class="bg-blue-600 px-4 py-2 rounded hover:bg-blue-700">Sign Up</a>
+        </article>
+
+        <article class="bg-gray-800 p-6 rounded-xl shadow-lg hover:scale-105 transition">
+          <h2 class="text-2xl font-semibold mb-4">Cardio Classes</h2>
+          <p class="mb-4">Boost stamina with high-energy cardio workouts.</p>
+          <a href="cardio.html" class="bg-blue-600 px-4 py-2 rounded hover:bg-blue-700">Sign Up</a>
+        </article>
+
+        <article class="bg-gray-800 p-6 rounded-xl shadow-lg hover:scale-105 transition">
+          <h2 class="text-2xl font-semibold mb-4">Yoga Sessions</h2>
+          <p class="mb-4">Improve flexibility and mental focus through yoga.</p>
+          <a href="yoga.html" class="bg-blue-600 px-4 py-2 rounded hover:bg-blue-700">Sign Up</a>
+        </article>
+      </section>
+    </div>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
+
+<!-- strength.html -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Strength Training</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-900 text-white p-6">
+    <div id="app">
+      <h1 class="text-3xl font-bold mt-4">Strength Training Classes</h1>
+      <p class="mt-4 max-w-2xl">Our strength program helps you develop muscle, endurance, and power with guided programs and professional trainers.</p>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
+
+<!-- cardio.html -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cardio Classes</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-900 text-white p-6">
+    <div id="app">
+      <h1 class="text-3xl font-bold mt-4">Cardio Training Classes</h1>
+      <p class="mt-4 max-w-2xl">Improve cardiovascular health with our high-intensity and endurance-based cardio classes.</p>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
+
+<!-- yoga.html -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yoga Sessions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-900 text-white p-6">
+    <div id="app">
+      <h1 class="text-3xl font-bold mt-4">Yoga Sessions</h1>
+      <p class="mt-4 max-w-2xl">Relax, stretch, and find inner balance with our professional yoga classes designed for all levels.</p>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+  <section class="reviews">
+  <h2>What Our Members Say</h2>
+
+  <div class="review-list">
+    <div class="review-card">
+      <p>"I've never felt stronger! The strength classes pushed me to my limits in the best way."</p>
+      <h4>— Sarah M.</h4>
+    </div>
+
+    <div class="review-card">
+      <p>"Cardio sessions are fun and energetic. I lost 5kg in 2 months!"</p>
+      <h4>— David K.</h4>
+    </div>
+
+    <div class="review-card">
+      <p>"Yoga helped me relieve stress and improved my flexibility so much."</p>
+      <h4>— Priya S.</h4>
+    </div>
+
+    <div class="review-card">
+      <p>"Amazing staff, clean equipment, and helpful instructors. Highly recommend!"</p>
+      <h4>— Michael T.</h4>
+    </div>
+  </div>
+</section>
+
+   <footer class="bg-gray-800 text-white text-center p-6 mt-10">
+  <h2 class="text-xl font-semibold mb-2">Contact Us</h2>
+  <p>📞 Phone: +353 85 123 4567</p>
+  <p>📧 Email: elitefitness@example.com</p>
+  <p>📍 Location: Dundalk Louth, Ireland</p>
+  
+  <div class="flex justify-center gap-4 mt-4">
+    <a href="#" class="hover:text-blue-400">Instagram</a>
+    <a href="#" class="hover:text-blue-400">Facebook</a>
+    <a href="#" class="hover:text-blue-400">Twitter</a>
+  </div>
+
+  <p class="mt-4 text-sm text-gray-400">
+    &copy; 2025 Elite Fitness Gym. All rights reserved.
+  </p>
+</footer>
+</html>
