@@ -10,11 +10,13 @@ export default function Home() {
       <Header />
 
       <section className="max-w-5xl mx-auto mt-10 px-6 relative z-10">
-        <img 
-          src="/img/Gym.jpg"
-          alt="Elite Fitness Gym"
-          className="w-full h-64 object-cover rounded-xl shadow-lg"
-        />
+        <div className="w-full rounded-xl shadow-lg overflow-hidden">
+          <img 
+            src="/img/Gym.jpg"
+            alt="Elite Fitness Gym"
+            className="w-full h-64 object-cover"
+          />
+        </div>
       </section>
 
       <section className="max-w-5xl mx-auto p-6 grid grid-cols-1 md:grid-cols-3 gap-6 mt-10 relative z-10">
