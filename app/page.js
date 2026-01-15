@@ -14,8 +14,9 @@ export default function Home() {
           <Image 
             src="/img/Gym.jpg"
             alt="Elite Fitness Gym"
-            fill
-            className="object-cover"
+            width={800}
+            height={300}
+            className="w-full h-full object-cover"
             priority
           />
         </div>
