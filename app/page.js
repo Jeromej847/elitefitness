@@ -1,8 +1,13 @@
+'use client'
+
 import Header from './components/Header'
 import Link from 'next/link'
+import { useState } from 'react'
 import './hero.css'
 
 export default function Home() {
+  const [imageSrc, setImageSrc] = useState('/img/Gym.jpg')
+
   return (
     <div className="hero text-white font-sans min-h-screen bg-gray-900">
       <div className="overlay"></div>
@@ -10,11 +15,16 @@ export default function Home() {
       <Header />
 
       <section className="max-w-5xl mx-auto mt-10 px-6 relative z-10">
-        <div className="w-full rounded-xl shadow-lg overflow-hidden">
+        <div className="w-full rounded-xl shadow-lg overflow-hidden bg-gray-700">
           <img 
-            src="/api/image/Gym.jpg"
+            src={imageSrc}
             alt="Elite Fitness Gym"
             className="w-full h-64 object-cover"
+            onError={() => {
+              if (imageSrc === '/img/Gym.jpg') {
+                setImageSrc('/api/image/Gym.jpg');
+              }
+            }}
           />
         </div>
       </section>
